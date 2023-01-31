@@ -31,7 +31,7 @@ public class Regex {
         String password = scan.nextLine();
 
         // Provide the pattern
-        pattern = Pattern.compile("^(?=.*[^Llenarez])(?!.*[AEIOUaeiou]).{8,}$");
+        pattern = Pattern.compile("(=?)[^\\d$][^LLNRZllnrz].{8,}");
 
         match = pattern.matcher(password);
 
